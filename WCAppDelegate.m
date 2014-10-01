@@ -7,6 +7,7 @@
 //
 
 #import "WCAppDelegate.h"
+#import "CateViewController.h"
 
 @implementation WCAppDelegate
 
@@ -16,6 +17,10 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    CateViewController *cvc = [[CateViewController alloc] init];
+    [self.window setRootViewController:cvc];
+
     return YES;
 }
 
